@@ -13,7 +13,15 @@ These functions are unique to the Tidal Wave framework.
 
 Tidal can retry a set of actions perfomed before if a certain condition is not met. Those conditions are called retry conditions.
 
-NOTE: retry actions will remember only one instance of the action types at a time. For example, if you use `find("element").sendKeys(String1).sendKeys(String2);`, it will remember only the second `sendKeys(String2)` action. This will be improved in the future releases.
+Example Format:
+
+```java
+find("element").click().clear().sendKeys("text").pressEnter().retryIf(notPresent("another element"), 5); 
+```
+
+The above code will repeat the actions click, clear, sendKeys, pressEnter 5 times or until 'another element' is present. There would be 500 milliseconds interval between each retries. 
+
+
 
 ### Not Present
 

@@ -26,6 +26,8 @@ No backward compatibility would be provided for these new functions.
 
 3. waitFor for findAll has been limited to expected conditions.
 
+4. RetryIf conditions can remember all sequential actions even when they repeat. 
+
 
 
 # Current - Version 1.3.1

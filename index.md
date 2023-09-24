@@ -30,19 +30,9 @@ Browser.close();
 
 ### Need of a framework
 
-What is the need for a framework? Typically, when using Selenium, a significant amount of code may need to be written to stabilize the execution. Selenium itself is not flaky; it performs its intended functions accurately. However, it is common for web applications to exhibit flakiness. Numerous environmental factors contribute to the sluggishness of our applications. Typical web applications consist of multiple AJAX components that load independently, providing users with a seamless experience. These components allow for page updates without requiring a full refresh. However, this poses a challenge for test automation libraries like Selenium, as they lack built-in wait times.
+What is the need for a framework? Usually during test automation scripting, a significant amount of code may need to be written to stabilize the execution. It is common for web applications to exhibit flakiness. Numerous environmental factors contribute to the sluggishness of our applications. Typical web applications consist of multiple AJAX components that load independently, providing users with a seamless experience. These components allow for page updates without requiring a full refresh. However, this poses a challenge for test automation libraries like Selenium, as they lack built-in wait times.
 
-If you go to [Selenium Website](https://www.selenium.dev){:target='_blank'}, you would read this: 
-<br>
-<br>
-**Selenium automates browsers. That's it! What you do with that power is entirely up to you.**
-
-Typically Selenium will wait for your page to be ready before it starts the interaction. But it wouldn't know if your Ajax page components are yet to load. Selenium would never know some text on your page is going to change 
-after a few seconds. These are the situations where you would need to write some custom wait methods when you use raw Selenium. 
-
-If these efforts can be reduced, the test automation engineers can focus more on designing better automation scenarios. The creative energy of the test automation engineer should focus on deriving the most efficient, faster tests rather than fixing
-the flakiness of the test run. Tidal - Wave test automation library is trying to achieve this. It is designed on the assumption that, there is no wait required initially expecting the element to be present in the application. If no element is found,
-it will enter the wait mode by itself. It has a default wait time of 5 seconds which can be configured to a higher or lower value if needed.
+If these efforts can be reduced, the test automation engineers can focus more on designing better automation scenarios. The creative energy of the test automation engineer should focus on deriving the most efficient, faster tests rather than fixing the flakiness of the test run. Tidal - Wave test automation library is trying to achieve this. It is designed on the assumption that, there is no wait required initially expecting the element to be present in the application. If no element is found, it will enter the wait mode. It has a default wait time of 5 seconds which can be configured to a higher or lower value if needed.
 
 
 
@@ -144,7 +134,7 @@ Call simple static methods `find()` and `findAll()` to locate your element(s). I
 
 ## About the project
 
-Tidal is maintained by [Philip Kurian](https://www.linkedin.com/in/kurianphilipk/)(author) and other community contributors
+Tidal is maintained by [Philip Kurian](https://www.linkedin.com/in/kurianphilipk/)(author) and other community contributors. For any queries regarding the framework or its usage pls write to <!-- --sdfsdfsf-<-- -->info<!-- erwerwerew -->@<!-- tertwertert <!-- sdfsdfsdfsdf -->tidalcode.dev
 
 ### License
 
