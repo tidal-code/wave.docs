@@ -10,7 +10,7 @@ nav_order: 7
 ## ScrollToView
 
 If the target element is not in the view port, you might need to scroll up or down to bring it to view. 
-Most of the times, Selenium will automatically do that. If it fails to do so and the user interaction 
+Most of the times, Wave library will automatically do that. If it fails to do so and the user interaction 
 fails with messages such as element not interactable or element hidden behind another element etc, we might
 need to bring it to view. For that use
 
