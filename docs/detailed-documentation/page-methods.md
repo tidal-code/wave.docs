@@ -7,12 +7,13 @@ nav_order: 13
 
 # Page or Document (DOM) Related Methods
 
-These are methods which can handle DOM related request like getting the application source code etc.
 
+These are stand alone methods from the Page class. They have no relation to the common find("element") method 
+you use in the Wave libary. That means, no waiting or page ready conditions will be applicable for these methods. 
 
 
 ```java
-Page.refresh();
+Page.refresh(); 
 Page.title();
 Page.currentUrl();
 Page.getWindowHandles(); 

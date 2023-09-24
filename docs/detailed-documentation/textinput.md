@@ -27,7 +27,7 @@ when it is necessary.
 
 **<span class='text-red-000'>Caution:</span>**
 <br>Do not try to input passwords or send keyboard key inputs using this method. The setText method will fail to read the
-value and evaluate it. This will eventually cause an exception when the timeout reaches.
+value or be able to evaluate it. This will eventually cause an exception when the timeout exceeds.
 
 
 
