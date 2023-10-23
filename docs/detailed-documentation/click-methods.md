@@ -17,20 +17,30 @@ find("locator").actionClick();
 find("locator").forceClick();
 ```
 
-**click()**:
+##### click()
+{: .text-purple-000}
+
 Involves a normal click. It handles stale element exception and element intercepted
 exceptions.
 
-**doubleClick()**:
+##### doubleClick()
+{: .text-purple-000}
+
 Would send a double click to the element.
 
-**contextClick()**:
+##### contextClick()
+{: .text-purple-000}
+
 Would send a right click (or left depending on mouse configuration), or a context click.
 
-**actionClick()**:
+##### actionClick()
+{: .text-purple-000}
+
 This click  may not throw an error if it did not work properly.
 
-**forceClick()**:
+##### forceClick()
+{: .text-purple-000}
+
 This click type will simulate a force click by clicking and holding on to an element for a short time.
 
 ## Javscript Click Method
