@@ -18,10 +18,14 @@ You will be able to clik on a checkbox using the `click()` method as well. But i
 as you may not be sure if the checkbox is already checked or not. The built-in check and uncheck methods will do
 it the right way. 
 
-**check()**:
+##### check()
+{: .text-purple-000}
+
 This will check the checkbox only if it is not already checked. 
 
-**unCheck()**:
+##### unCheck()
+{: .text-purple-000}
+
 This will uncheck the checkbox only if it is already checked.
 
 

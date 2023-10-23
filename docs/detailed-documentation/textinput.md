@@ -16,10 +16,14 @@ find("locator").setInnerHtml(String text);
 find("locator").clearAndType(String text);
 ```
 
-**sendKeys(text):**
+##### sendKeys(text)
+{: .text-purple-000}
+
 Normal text input method to send text data to a UI text input field. 
 
-**setText(text):**
+##### setText(text)
+{: .text-purple-000}
+
 This method would revisit the value input and if it is not correct, it will clear and 
 try again until it succeeds or a timeout is reached. This method is quite useful to fill
 difficult text input fields. This method is slower than the sendKeys() method. So use it only
@@ -31,11 +35,16 @@ value or be able to evaluate it. This will eventually cause an exception when th
 
 
 
-**setInnerHtml(text):**
+##### setInnerHtml(text)
+{: .text-purple-000}
+
 This method would set the text value as an inner HTML value. This is not a proper text input method as it relies on modifying the
 HTML directly. So it may have unforeseen consequences. Use this method only if you need it absolutely necessary.
 
-**clearAndType(text):**
+##### clearAndType(text):
+{: .text-purple-000}
+
+
 This method will try to clear the input field and send the text to the input field. 
 
 ## Javscript Text Input Method
