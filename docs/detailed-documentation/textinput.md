@@ -26,8 +26,9 @@ Normal text input method to send text data to a UI text input field.
 
 This method would revisit the value input and if it is not correct, it will clear and 
 try again until it succeeds or a timeout is reached. This method is quite useful to fill
-difficult text input fields. This method is slower than the sendKeys() method. So use it only
-when it is necessary. 
+difficult text input fields. This method is slower than the sendKeys() method. 
+
+With setText method, you don't need to use clear() methods as the setText() will do it as part of its operation.
 
 **<span class='text-red-000'>Caution:</span>**
 <br>Do not try to input passwords or send keyboard key inputs using this method. The setText method will fail to read the
