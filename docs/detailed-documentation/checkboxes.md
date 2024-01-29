@@ -2,7 +2,7 @@
 layout: default
 title: Checkboxes
 parent: Detailed Docs
-nav_order: 8
+nav_order: 7
 ---
 
 # Check Methods

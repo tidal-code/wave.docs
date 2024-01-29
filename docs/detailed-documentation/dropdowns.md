@@ -7,13 +7,14 @@ nav_order: 6
 
 # Dropdowns
 
-Typical dropdown with input type as \'select\' can be interacted with using three
-methods 
+The following methods can be used only with input type as \'select'\.
+<br>
+
 
 ```java
-find("locator").select(String selectText); //Visible text in the dropdown
-find("locator").selectByValue(String value); //value of select elements
-find("locator").select(int index); //index value of elements
+find("locator").select(String selectText); //Select with visible text in the dropdown
+find("locator").selectByValue(String value); //... with value of select element
+find("locator").select(int index); //... with index value of the element
 ```
 
 ##### select(String selectText)
@@ -26,14 +27,14 @@ Returns: The current selected value.
 ##### selectByValue(String value)
 {: .text-purple-000}
 
-This method will select the drop down value with the value attribute of the dropdown elements
+This method will select the drop down value with the value attribute of the dropdown elements.
 
 Returns: The current selected value.
 
 ##### select(String selectText)
 {: .text-purple-000}
 
-This method will select the drop down value with the index of the .
+This method will select the drop down value with the index of the elements in order.
 
 
 Returns: The current selected value.
