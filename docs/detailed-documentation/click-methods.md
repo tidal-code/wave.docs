@@ -7,7 +7,7 @@ nav_order: 4
 
 # Click Methods
 
-The available click methods in the framework are:
+The following click methods are available:
 
 ```java
 find("locator").click();
@@ -20,34 +20,37 @@ find("locator").forceClick();
 ##### click()
 {: .text-purple-000}
 
-Involves a normal click. It handles stale element exception and element intercepted
-exceptions.
+It is encouraged to use this click method. For the click method to work, the element
+should be in the correct interactable and visible state. 
+
 
 ##### doubleClick()
 {: .text-purple-000}
 
-Would send a double click to the element.
+To send a double click to the element.
 
 ##### contextClick()
 {: .text-purple-000}
 
-Would send a right click (or left depending on mouse configuration), or a context click.
+To send a right click (or left depending on mouse configuration), or a context click.
 
 ##### actionClick()
 {: .text-purple-000}
 
-This click  may not throw an error if it did not work properly.
+actionClick would apply the click action even if the element is not in the right interactable 
+state. No exception will be thrown if the click is not successful. This method would be useful when 
+the normal click action wouldn't work due to overlapping elements. 
 
 ##### forceClick()
 {: .text-purple-000}
 
-This click type will simulate a force click by clicking and holding on to an element for a short time.
+This click method will simulate a force click by clicking and holding on to an element for a short time.
 
 ## Javscript Click Method
 
 This is a method using JavaScript to send a click action to an element. This may not be reliable always as it 
-will not throw an exception like the other click methods when it fails. So please use this method when it is 
-absolutely necessary only.
+will not throw an exception like the other click methods when it fails. Usage of this method is not encouraged unless 
+no alternatives are available.
 
 ```java
 clickByJS();
