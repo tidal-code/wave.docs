@@ -2,7 +2,7 @@
 layout: default
 title: Versions
 parent: Detailed Docs
-nav_order: 1
+nav_order: 1.1
 ---
 
 ## Future Releases
