@@ -14,9 +14,9 @@ This snapshot version may get updates and the new experimental functions under t
 No backward compatibility would be provided for these new functions. 
 ```xml
         <dependency>
-            <groupId>io.github.tidal-code</groupId>
+            <groupId>dev.tidalcode</groupId>
             <artifactId>wave</artifactId>
-            <version>1.3.2-SNAPSHOT</version>
+            <version>2.0.1</version>
         </dependency>
 ```
 
