@@ -20,7 +20,7 @@ find("element").shouldBe(enabled);
 find("element").shouldBe(notEnabled);
 ```
 
-Examaples for verifying the element's Data:
+Examples for verifying the element's Data:
 
 ```java
 find("element").shouldHave(exactText("Text Value"));
