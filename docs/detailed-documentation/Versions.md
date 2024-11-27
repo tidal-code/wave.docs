@@ -5,32 +5,8 @@ parent: Detailed Docs
 nav_order: 1.1
 ---
 
-## Future Releases
 
-Under Test Snapshot Version
-{: .label .label-orange }
-
-This snapshot version may get updates and the new experimental functions under test could change without notice.
-No backward compatibility would be provided for these new functions. 
-```xml
-        <dependency>
-            <groupId>dev.tidalcode</groupId>
-            <artifactId>wave</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-```
-
-1. Table data scraping function (Under development. No API provided).
-
-2. Advanced debug mode.
-
-3. waitFor for findAll has been limited to expected conditions.
-
-4. RetryIf conditions can remember all sequential actions even when they repeat. 
-
-
-
-# Current - Version 1.3.1
+# Current - Version 2.0.1
 
 New release
 {: .label .label-purple }
@@ -39,23 +15,43 @@ Maven:
 
 ```xml
         <dependency>
-            <groupId>io.github.tidal-code</groupId>
+            <groupId>dev.tidalcode</groupId>
             <artifactId>wave</artifactId>
-            <version>1.3.1</version>
+            <version>2.0.1</version>
         </dependency>
 ```
 
 Gradle:
 
 ```yml
-implementation group: 'io.github.tidal-code', name: 'wave', version: '1.3.0'
+implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.1'
 ```
+
+1. Advanced debug mode.
+
+2. waitFor for findAll has been limited to expected conditions.
+
+3. RetryIf conditions can remember all sequential actions even when they repeat. 
+
+
+
+## For older versions the the group id is different. Please use the following co-ordinates
+
+Maven:
+
+```xml
+        <dependency>
+            <groupId>io.github.tidal-code</groupId>
+            <artifactId>wave</artifactId>
+            <version>${version}</version>
+        </dependency>
+```
+
+### Version 1.3.1
 
 Added keyboard multi interaction function.
 
 New `FluentRquest` class for API requests.
-
-
 
 ### Version 1.3.0
 
