@@ -10,7 +10,7 @@ permalink: docs/api-requests
 
 
 ### Overview  
-This API Test Automation Framework is designed to provide a simple and efficient way to automate testing of RESTful APIs. It provides a fluent and intuitive API for setting up requests, sending them, and validating responses.  
+This API request capability was introduced to provide a simple and efficient way to automate testing of RESTful APIs. It provides a fluent and intuitive API for setting up requests, sending them, and validating responses.  
 
 ### Key Features  
 - **Ease of Use**: Simple methods to configure and send API requests.  
@@ -36,6 +36,9 @@ Request.set(String url)
 Sets the base URL for the API request.  
 - **Parameter**: `url` - The API endpoint (e.g., `https://api.example.com/resource`).  
 
+
+<br>
+
 ```java
 Request.setMediaType(String mediaType)
 ```
@@ -43,22 +46,28 @@ Request.setMediaType(String mediaType)
 Specifies the media type of the request.  
 - **Parameter**: `mediaType` - The type of the media, such as `application/json` or `application/xml`.  
 
+<br>
+
 ```java
  Request.setHeader(String key, String value)
  ```
-Adds a header to the request.  
+Adds a header to the request.  You can set more than one set of headers using method multiple times.
 - **Parameters**:  
   - `key` - The header name (e.g., `Authorization`).  
   - `value` - The header value (e.g., `Bearer token`).  
+
+<br>
 
 ```java
 Request.setQueryParams(String key, String value)
 ```
 
-Adds query parameters to the request URL.  
+Adds query parameters to the request URL. You can set more than one set of query parameters using method multiple times.
 - **Parameters**:  
   - `key` - The query parameter name.  
   - `value` - The query parameter value.  
+
+<br>
 
 ```java
 Request.setPayload(String payload)
@@ -67,6 +76,8 @@ Request.setPayload(String payload)
 Sets the request body.  
 - **Parameter**: `payload` - The payload content in string format (e.g., JSON or XML).  
 
+<br>
+
 ```java
 Request.send(String reqType)
 ```
@@ -74,17 +85,23 @@ Request.send(String reqType)
 Sends the API request using the specified HTTP method.  
 - **Parameter**: `reqType` - The HTTP method (e.g., `GET`, `POST`, `PUT`, `DELETE`).  
 
+<br>
+
 ```java
 Request.response()
 ```
 
 Retrieves the response object. This object contains the raw response returned by the API.  
 
+<br>
+
 ```java
 Request.getResponseString()
 ```
 
 Returns the response content as a string.  
+
+<br>
 
 ```java
 Request.reset()
@@ -144,6 +161,24 @@ Request.reset();
 
 ---
 
+### Fluent Request Approach
+
+```java
+FluentRequest fluentRequest = new FluentRequest();
+
+fluentRequest.set("url")
+ .setMediaType("application/json")
+ .setQueryParams("key", "value")
+ .setQueryParams("key2", "value2")
+ .setHeader("Authorization", "Bearer sample_token")
+ .setHeader("HeaderKey", "SomeValue")
+ .send(ReqType.POST);
+
+System.out.println(fluentRequest.getStatusCode());
+System.out.println(fluentRequest.getResponseString());
+
+```
+
 ### Error Handling  
 
 #### Common Errors and Solutions  
@@ -183,6 +218,10 @@ To add custom functionality, extend the `Request` class or use utility classes t
 ---
 
 ### FAQs  
+
+**Q: How to send auth information to your requests?**  
+Auth information is generally sent via headers. For example if it is basic user name and password, it can be sent as key value pairs in the  header.
+If it is a bearer token it can be sent using "Authorization", "Bearer sample_token" format. 
 
 **Q: Can I use this framework with CI/CD pipelines?**  
 Yes, integrate it with tools like Jenkins, GitHub Actions, or Azure Pipelines for continuous testing.  
