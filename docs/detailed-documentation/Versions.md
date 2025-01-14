@@ -17,14 +17,14 @@ Maven:
         <dependency>
             <groupId>dev.tidalcode</groupId>
             <artifactId>wave</artifactId>
-            <version>2.0.1</version>
+            <version>2.0.3</version>
         </dependency>
 ```
 
 Gradle:
 
 ```yml
-implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.1'
+implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.3'
 ```
 
 1. Advanced debug mode.
