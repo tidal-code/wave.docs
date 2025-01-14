@@ -6,7 +6,7 @@ nav_order: 1.1
 ---
 
 
-# Current - Version 2.0.1
+# Current - Version 2.0.3
 
 New release
 {: .label .label-purple }
@@ -17,15 +17,24 @@ Maven:
         <dependency>
             <groupId>dev.tidalcode</groupId>
             <artifactId>wave</artifactId>
-            <version>2.0.1</version>
+            <version>2.0.3</version>
         </dependency>
 ```
 
 Gradle:
 
 ```yml
-implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.1'
+implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.3'
 ```
+
+Fix for the bug: [Attribute Verification](https://github.com/tidal-code/wave/issues/45){:target='_blank'}
+### Version 2.0.2
+
+Implemented the changes for the newest Selenium version 4.27.0
+1. getAttribute() has been changed to getDomAttribute()
+2. Removed WebDriverManager dependency as SeleniumManager is fully functional. 
+
+### Version 2.0.1
 
 1. Advanced debug mode.
 
@@ -33,6 +42,9 @@ implementation group: 'dev.tidalcode', name: 'wave', version: '2.0.1'
 
 3. RetryIf conditions can remember all sequential actions even when they repeat. 
 
+
+### Version 2.0.0
+Migration to new package structure [dev.tidalcode] and domain name [dev.tidalcode]
 
 
 ## For older versions the the group id is different. Please use the following co-ordinates
